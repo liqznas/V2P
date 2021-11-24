@@ -6,6 +6,7 @@
   "type": "rewrite",
   "resource": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqwz.js",
   "mitmhost": [
+    "boxjs.av"
     "kandian.wkandian.com",
     "ant.xunsl.com",
     "tq.xunsl.com",
