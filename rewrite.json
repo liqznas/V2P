@@ -6,10 +6,10 @@
   "type": "rewrite",
   "resource": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqwz.js",
   "mitmhost": [
-    {"kandian.wkandian.com"},
-    {"ant.xunsl.com"},
-    {"tq.xunsl.com"},
-    {"gaoqingdianshi.com"}
+    "kandian.wkandian.com",
+    "ant.xunsl.com",
+    "tq.xunsl.com",
+    "gaoqingdianshi.com"
   ],
   "list": [
     {
