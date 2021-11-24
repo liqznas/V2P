@@ -6,9 +6,9 @@
   "type": "rewrite",
   "resource": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqwz.js",
   "mitmhost": [
-    "boxjs.av"
-  ],
-  "list": [
+                 "boxjs.av"
+           ],
+   "rewrite": [
     {
       "match": "https://kandian.wkandian.com/v5/article/info.json",
       "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqwz.js",
