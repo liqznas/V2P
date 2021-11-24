@@ -331,6 +331,23 @@
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_withdraw.js"
       }
-    }
+    },
+    
+{
+    "name": "中青看点定时订阅",
+    "type": "sub",
+    "job": {
+        "type": "replace",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_cron.json"
+      }
+    }, 
+ {
+    "name": "晶彩看点定时订阅",
+    "type": "sub",
+    "job": {
+        "type": "replace",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/jc_cron.json"
+      }
+    }    
   ]
 }
