@@ -19,8 +19,20 @@
       "stage": "res"
     },
     {
-      "match": "https://kandian.wkandian.com/v5/article/detail.json",
-      "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqwz.js",
+      "match": "https://kandian.wkandian.com/v17/Ad/getReward.json",
+      "target": "https://gitee.com/Jxell/js_scripts/raw/main/zq/zq_5_60.js",
+      "enable": true,
+      "stage": "res"
+    },
+ {
+      "match": "https://kandian.wkandian.com/v17/Ad/getReward.json",
+      "target": "https://gitee.com/Jxell/js_scripts/raw/main/zq/zq_5_60.js",
+      "enable": true,
+      "stage": "res"
+  }, 
+    {
+      "match": "https://kandian.wkandian.com/V17/Ximalaya/setCompleteSec.json",
+      "target": "https://raw.githubusercontent.com/liuqi6968/-/main/zq_music.js",
       "enable": true,
       "stage": "res"
     },
