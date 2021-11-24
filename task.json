@@ -105,6 +105,16 @@
       }
     }
      {
+      "name": "晶彩看点阅读分享",
+      "type": "cron",
+      "time": "30 6,22 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jckd/jckd_shareRead.js "
+      }
+    }
+     {
       "name": "电视家",
       "type": "cron",
       "time": "15 8-21 * * *",
@@ -124,16 +134,42 @@
         "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/dsjtx.js"
       }
     }
-     {
-      "name": "晶彩看点阅读分享",
-      "type": "cron",
-      "time": "30 6,22 * * *",
-      "running": true,
-      "job": {
-        "type": "runjs",
-        "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jckd/jckd_shareRead.js "
-      }
-    }
+ {
+            "name": "晶彩天气看看赚",
+            "type": "cron",
+            "time": "30 9,20 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_kkz.js"
+            }
+        },
+        {
+            "name": "晶彩天气文章视频",
+            "type": "cron",
+            "time": "20 7,18 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_read.js"
+            }
+        },
+        {
+            "name": "晶彩天气日常任务",
+            "type": "cron",
+            "time": "15,45 * * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_daily.js"
+            }
+        },
+        {
+            "name": "晶彩天气任务签到",
+            "type": "cron",
+            "time": "30 22 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_reward.js"
+            }
+        }
      {
       "name": "晶彩天气阅读分享",
       "type": "cron",
@@ -154,6 +190,144 @@
         "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkd/zqkd_shareRead.js"
       }
     }
-
+{
+      "name": "中青签到",
+      "type": "cron",
+      "time": "15 2 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqqd.js"
+      }
+    },
+    {
+      "name": "中青文章",
+      "type": "cron",
+      "time": "30 7,12,18 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqwz.js"
+      }
+    },
+    {
+     "name": "中青看看赚",
+      "type": "cron",
+      "time": "45 9 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqkkz.js"
+      }
+    },
+    {
+      "name": "中青火爆转发",
+      "type": "cron",
+      "time": "15 6,12,18 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_share.js"
+      }
+    },
+    {
+      "name": "中青福利视频",
+      "type": "cron",
+      "time": "20 21 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_Adv_video.js"
+      }
+    },
+    {
+      "name": "中青每日任务宝箱领取",
+      "type": "cron",
+      "time": "15 22 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqbox.js"
+      }
+    },
+    {
+      "name": "中青每日收益统计",
+      "type": "cron",
+      "time": "15 23 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_today_score.js"
+      }
+    },
+    {
+      "name": "中青好友签到红包",
+      "type": "cron",
+      "time": "15 7 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_friendSign.js"
+      }
+    },
+    {
+      "name": "中青抽奖",
+      "type": "cron",
+      "time": "34 22 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_Rotary.js"
+      }
+    },
+    {
+      "name": "中青打卡赚",
+      "type": "cron",
+      "time": "34 5,9 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_wakeup.js"
+      }
+    },
+    {
+      "name": "中青搜索赚",
+      "type": "cron",
+      "time": "35 5 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqssz.js"
+      }
+    },
+    {
+      "name": "中青浏览赚",
+      "type": "cron",
+      "time": "34 6 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqllz.js"
+      }
+    },
+    {
+      "name": "中青阅读翻倍",
+      "type": "cron",
+      "time": "34 5 * * 1",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_double.js"
+      }
+    },
+    {
+      "name": "中青自动提现",
+      "type": "cron",
+      "time": "25 10 * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_withdraw.js"
+      }
+    }
   ]
 }
