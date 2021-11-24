@@ -1,6 +1,6 @@
 {
   "name": "V2P定时任务订阅",
-  "desc": "无",
+  "note": "无",
   "date": "2021-11-25 20:32:08",
   "author": "无",
   "resource": "https://raw.githubusercontent.com/liqznas/v2p/main/task.json",
@@ -113,7 +113,7 @@
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jckd/jckd_shareRead.js "
       }
-    }
+    },
      {
       "name": "电视家",
       "type": "cron",
@@ -123,7 +123,7 @@
         "type": "runjs",
         "target": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/dsj.js"
       }
-    }
+    },
      {
       "name": "电视家提现",
       "type": "cron",
@@ -133,7 +133,7 @@
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/dsjtx.js"
       }
-    }
+    },
  {
             "name": "晶彩天气看看赚",
             "type": "cron",
@@ -169,7 +169,7 @@
                 "type": "runjs",
                 "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_reward.js"
             }
-        }
+        },
      {
       "name": "晶彩天气阅读分享",
       "type": "cron",
@@ -179,7 +179,7 @@
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_shareRead.js"
       }
-    }
+    },
      {
       "name": "中青看点阅读分享",
       "type": "cron",
@@ -189,7 +189,7 @@
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkd/zqkd_shareRead.js"
       }
-    }
+    },
 {
       "name": "中青签到",
       "type": "cron",
