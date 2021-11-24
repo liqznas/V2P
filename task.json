@@ -114,7 +114,6 @@
         "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jckd/jckd_shareRead.js "
       }
     },
-    
      {
       "name": "电视家",
       "type": "cron",
@@ -135,7 +134,6 @@
         "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/dsjtx.js"
       }
     },
-    
  {
   "name": "晶彩天气看看赚",
   "type": "cron",
@@ -163,7 +161,6 @@
         "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_daily.js"
           }
     },
-
 {
     "name": "晶彩天气任务签到",
     "type": "cron",
