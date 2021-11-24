@@ -1,12 +1,11 @@
-{
-  "name": "elecV2P 重写订阅",
-  "author": "留个名字",
-  "note": "导出自用",
-  "date": "2021-11-24 16:51:16",
+{ 
+  "name": "晶彩天气重写订阅",
   "type": "rewrite",
-  "resource": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqwz.js",
+  "note": "仅供参考",
+  "author": "li",
+  "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/rewrite.json",
   "mitmhost": [
-                 "boxjs.av"
+               "tq.xunsl.com"
            ],
    "rewrite": [
     {
