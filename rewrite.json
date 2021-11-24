@@ -181,7 +181,9 @@
       "enable": true
     }
   ],
-   "task": [
+   "task": {
+      "type": "skip",
+      "list": [
     {
       "name": "晶彩签到",
       "type": "cron",
@@ -507,4 +509,5 @@
       }
     }
   ]
+ }
 }
