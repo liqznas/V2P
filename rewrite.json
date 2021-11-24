@@ -5,12 +5,12 @@
   "author": "li",
   "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/rewrite.json",
   "mitmhost": [
-               "tq.xunsl.com",
-               "kandian.wkandian.com",
-               "ant.xunsl.com",
-               "tq.xunsl.com",
-               "gaoqingdianshi.com"
-           ],
+    {"tq.xunsl.com"},
+    {"kandian.wkandian.com"},
+    {"ant.xunsl.com"},
+    {"tq.xunsl.com"},
+    {"gaoqingdianshi.com"}
+     ],
    "rewrite": [
     {
       "match": "https://kandian.wkandian.com/v5/article/info.json",
