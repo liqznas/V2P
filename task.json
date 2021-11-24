@@ -121,7 +121,7 @@
       "running": true,
       "job": {
         "type": "runjs",
-        "target": "https://raw.githubusercontent.com/liqznas/v2p/main/dsjtx.js"
+        "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/dsjtx.js"
       }
     }
      {
