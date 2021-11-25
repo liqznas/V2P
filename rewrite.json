@@ -15,6 +15,12 @@
      ],
    "rewrite": [
     {
+      "match": "https://api.uutequan.com/v1/welfare/page",
+      "target": "https://raw.githubusercontent.com/YaphetS0903/JStest/main/flhs.js",
+      "enable": true,
+      "stage": "res"
+    },
+    {
       "match": "https://v3.sdk.haowusong.com/api/box/wallet/info",
       "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/daw.js",
       "enable": true,
@@ -222,6 +228,15 @@
    "task": {
       "type": "skip",
       "list": [
+   {
+      "name": "返利好省",
+      "type": "cron",
+      "time": "0 8-23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/YaphetS0903/JStest/main/flhs.js"
+      }
+    },
    {
       "name": "自选股",
       "type": "cron",
