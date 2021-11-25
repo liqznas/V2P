@@ -12,9 +12,16 @@
     "gaoqingdianshi.com",
     "v3.sdk.haowusong.com",
     "wzq.tenpay.com"
+    "api.st615.com"
      ],
    "rewrite": [
-{
+     {
+      "match": "https://api.st615.com/v1/user/info?",
+      "target": "script-request-header https://raw.githubusercontent.com/xl2101200/-/main/jztt.js",
+      "enable": true,
+      "stage": "res"
+    },
+   {
       "match": "http://pay.gaoqingdianshi.com/api/v2/cash/withdrawal?",
       "target": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/dsj.js",
       "enable": true,
@@ -240,6 +247,15 @@
    "task": {
       "type": "skip",
       "list": [
+          {
+      "name": "九章看点",
+      "type": "cron",
+      "time": "0 0 */1 * * * ",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/xl2101200/-/main/jztt.js"
+      }
+    },
    {
       "name": "返利好省",
       "type": "cron",
