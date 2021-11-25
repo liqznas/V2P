@@ -6,6 +6,12 @@
   "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/rewrite.json",
   "mitmhost": ["tq.xunsl.com","kandian.wkandian.com","ant.xunsl.com","boxjs.av","gaoqingdianshi.com","v3.sdk.haowusong.com","wzq.tenpay.com","api.st615.com"],
    "rewrite": [
+    {
+      "match": "https://api.st615.com/v1/user/info?",
+      "target": "https://raw.githubusercontent.com/xl2101200/-/main/jztt.js",
+      "enable": true,
+      "stage": "res"
+    },
    {
       "match": "http://pay.gaoqingdianshi.com/api/v2/cash/withdrawal?",
       "target": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/dsj.js",
