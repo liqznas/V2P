@@ -222,6 +222,15 @@
    "task": {
       "type": "skip",
       "list": [
+   {
+      "name": "自选股",
+      "type": "cron",
+      "time": "35 11,16 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/txstock.js"
+      }
+    },
      {
       "name": "都爱玩",
       "type": "cron",
