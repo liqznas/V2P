@@ -247,10 +247,10 @@
    "task": {
       "type": "skip",
       "list": [
-          {
+     {
       "name": "九章看点",
       "type": "cron",
-      "time": "0 0 * * * * ",
+      "time": "0 0 */1 * * *",
       "job": {
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/xl2101200/-/main/jztt.js"
