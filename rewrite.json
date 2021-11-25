@@ -17,7 +17,7 @@
    "rewrite": [
      {
       "match": "https://api.st615.com/v1/user/info?",
-      "target": "script-request-header https://raw.githubusercontent.com/xl2101200/-/main/jztt.js",
+      "target": "https://raw.githubusercontent.com/xl2101200/-/main/jztt.js",
       "enable": true,
       "stage": "res"
     },
@@ -250,7 +250,7 @@
           {
       "name": "九章看点",
       "type": "cron",
-      "time": "0 0 */1 * * * ",
+      "time": "0 0 * * * * ",
       "job": {
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/xl2101200/-/main/jztt.js"
