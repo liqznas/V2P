@@ -440,23 +440,23 @@
      {
       "name": "电视家",
       "type": "cron",
-      "time": "57 8-21 * * *",
+      "time": "59 59 * * * *",
       "running": true,
       "job": {
         "type": "runjs",
         "target": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/dsj.js"
       }
     },
-     {
-      "name": "电视家提现",
-      "type": "cron",
-      "time": "0 0 12,20 * * *",
-      "running": true,
-      "job": {
-        "type": "runjs",
-        "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/dsjtx.js"
-      }
-    },
+     //{
+      //"name": "电视家提现",
+      //"type": "cron",
+      //"time": "0 0 12,20 * * *",
+     // "running": true,
+      //"job": {
+       // "type": "runjs",
+       // "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/dsjtx.js"
+      //}
+   // },
 //************************************************************************************************************************
 //***********************************************************晶彩天气定时**************************************************
 //************************************************************************************************************************
