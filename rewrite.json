@@ -4,9 +4,27 @@
   "note": "仅供参考",
   "author": "li",
   "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/rewrite.json",
-  "mitmhost": ["tq.xunsl.com","kandian.wkandian.com","ant.xunsl.com","boxjs.av","gaoqingdianshi.com","v3.sdk.haowusong.com","wzq.tenpay.com","api.st615.com"],
+  "mitmhost": ["tq.xunsl.com","kandian.wkandian.com","ant.xunsl.com","boxjs.av","gaoqingdianshi.com","v3.sdk.haowusong.com","wzq.tenpay.com","nebula.kuaishou.com","api2.e.kuaishou.com"," api.e.kuaishou.com","api.st615.com"],
    "rewrite": [
     {
+      "match": "https://nebula.kuaishou.com/rest/n/nebula/activity/earn/overview/basicInfo",
+      "target": "https://raw.githubusercontent.com/liuqi6968/-/main/ks_js.js",
+      "enable": true,
+      "stage": "res"
+    },
+{
+      "match": "https://api2.e.kuaishou.com/rest/r/reward/task/status",
+      "target": "https://raw.githubusercontent.com/liuqi6968/-/main/ks_js.js",
+      "enable": true,
+      "stage": "res"
+    },
+{
+      "match": "https://api.e.kuaishou.com/rest/e/v1/reward/ad",
+      "target": "https://raw.githubusercontent.com/liuqi6968/-/main/ks_js.js",
+      "enable": true,
+      "stage": "res"
+    },
+  {
       "match": "https://api.st615.com/v1/user/info?",
       "target": "https://raw.githubusercontent.com/xl2101200/-/main/jztt.js",
       "enable": true,
@@ -238,6 +256,15 @@
    "task": {
       "type": "skip",
       "list": [
+    {
+      "name": "快手极速版",
+      "type": "cron",
+      "time": "3 */1 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/liuqi6968/-/main/ks_js.js"
+      }
+    },
      {
       "name": "九章看点",
       "type": "cron",
