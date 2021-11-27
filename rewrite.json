@@ -63,7 +63,7 @@
 //*****************************************************都爱玩*****************************************************************
 //****************************************************************************************************************************
     {
-      "match": "https://v3.sdk.haowusong.com/api/box/wallet/info",
+      "match": "http://v3.sdk.haowusong.com/api/app/web/config",
       "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/daw.js",
       "enable": true,
       "stage": "res"
