@@ -6,6 +6,27 @@
   "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/rewrite.json",
   "mitmhost": ["tq.xunsl.com","kandian.wkandian.com","ant.xunsl.com","boxjs.av","gaoqingdianshi.com","v3.sdk.haowusong.com","wzq.tenpay.com","nebula.kuaishou.com","api2.e.kuaishou.com"," api.e.kuaishou.com","api.st615.com","r1.nullpointerexception.cn","api-access.pangolin-sdk-toutiao.com"],
    "rewrite": [
+     //************************************************************************************************************************
+//*******************************************************番茄看看********************************************************
+//************************************************************************************************************************
+    {
+      "match": "http://.+/(task/read|t/show.html)\?",
+      "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/fqkk_auto.js",
+      "enable": true,
+      "stage": "res"
+    },
+    {
+      "match": "http://.+/fast_reada/j?\?",
+      "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/fqkk_auto.js",
+      "enable": true,
+      "stage": "res"
+    },
+    {
+      "match": "http://.+/mock/read",
+      "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/fqkk_auto.js",
+      "enable": true,
+      "stage": "res"
+    },
 //************************************************************************************************************************
 //*******************************************************快手极速版********************************************************
 //************************************************************************************************************************
@@ -340,6 +361,18 @@
       "job": {
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/daw.js"
+      }
+    },
+ //************************************************************************************************************************
+//***********************************************************番茄看看**************************************************
+//************************************************************************************************************************
+    {
+      "name": "晶彩签到",
+      "type": "cron",
+      "time": "15 7-23 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/fqkk_auto.js"
       }
     },
 //************************************************************************************************************************
