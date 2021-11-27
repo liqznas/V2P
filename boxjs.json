@@ -1,0 +1,16 @@
+{
+    "id": "ziye.app.sub",
+    "name": "自用脚本订阅",
+    "author": "li",
+    "icon": "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.zcool.cn%2Fcommunity%2F0151015c9338c6a801214168c6e7bf.png%402o.png&refer=http%3A%2F%2Fimg.zcool.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1640574939&t=dabf394fb050901a306d1e1ef0b1bd64",
+    "repo": "https://github.com/liqz",
+    "apps": [{
+            "id": "qczjspeed",
+            "name": "v2p自用",
+            "author": "li",
+            "settings": [
+              { "id": "jckdShareNum","name": "晶彩看点分享次数","val": "10","type": "string", "desc": "晶彩看点每次运行的分享文章数"},
+              { "id": "jctqShareNum","name": "晶彩天气分享次数","val": "10","type": "string", "desc": "晶彩天气每次运行的分享文章数"},
+              { "id": "zqkdShareNum","name": "中青看点分享次数","val": "10","type": "string", "desc": "中青看点每次运行的分享文章数"}]
+              }]
+}
