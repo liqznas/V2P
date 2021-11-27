@@ -9,8 +9,15 @@
             "name": "v2p自用",
             "author": "li",
             "settings": [
+              { "id": "boxjs_host","name": "boxjshost","val": "http://boxjs.av","type": "string", "desc": "boxjshost"},
               { "id": "jckdShareNum","name": "晶彩看点分享次数","val": "10","type": "string", "desc": "晶彩看点每次运行的分享文章数"},
               { "id": "jctqShareNum","name": "晶彩天气分享次数","val": "10","type": "string", "desc": "晶彩天气每次运行的分享文章数"},
-              { "id": "zqkdShareNum","name": "中青看点分享次数","val": "10","type": "string", "desc": "中青看点每次运行的分享文章数"}]
-              }]
+              { "id": "zqkdShareNum","name": "中青看点分享次数","val": "10","type": "string", "desc": "中青看点每次运行的分享文章数"},
+              { "id": "dsjCount","name": "电视家账号数","val": "1","type": "string", "desc": "电视家账号数"}, 
+              { "id": "dsjZDTX", "name": "自动提现", "val": "99", "type": "number", "desc": "可设置0,1,5,10,20,25,30,50,99  0不提现 1随机提现 99由上到下所有提现 其他固定提现"},
+              { "id": "dsjXYZ","name": "执行概率","val": "100","type": "number","desc": "0不执行 可设置0-100,默认百分百"},
+              { "id": "dsjTXTX","name": "余额提醒","val": "5","type": "number","desc": "0不提醒 可设置0,5,10,20,25,30,50,100"},
+              { "id": "dsjnotifyttt","name": "推送控制","val": "1","type": "number","desc": "0关闭，1推送,默认12点以及23点推送"},
+              { "id": "dsjnotifyInterval","name": "通知控制", "val": "2","type": "number","desc": "0关闭，1为 所有通知，2为 12，23 点通知，3为 6，12，18，23 点通知 "}                
+              ] }]
 }
