@@ -7,7 +7,7 @@
     "apps": [{
             "id": "v2ptest",
             "name": "v2p自用",
-            "keys": ["dsjheader","jztturl","qkhqheader"],
+            "keys": ["dsjheader","jztturl","qkhqheader","fqkkurl","fqkkhd"],
             "author": "li",
             "settings": [
               { "id": "boxjs_host","name": "boxjshost","val": "http://boxjs.av","type": "string", "desc": "boxjshost"},
