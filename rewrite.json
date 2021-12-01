@@ -1000,7 +1000,7 @@
         "type": "runjs",
         "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js"
       }
-    }
+    },
   ]
  }
 }
