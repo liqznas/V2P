@@ -20,7 +20,7 @@
               { "id": "dsjTXTX","name": "电视家余额提醒","val": "5","type": "number","desc": "0不提醒 可设置0,5,10,20,25,30,50,100"},
               { "id": "dsjnotifyttt","name": "电视家推送控制","val": "1","type": "number","desc": "0关闭，1推送,默认12点以及23点推送"},
               { "id": "dsjnotifyInterval","name": "电视家通知控制", "val": "2","type": "number","desc": "0关闭，1为 所有通知，2为 12，23 点通知，3为 6，12，18，23 点通知 "},
-              { "id": "tguserid","name": "TG用户名","val": "1","type": "number",desc": "从机器人获得tgID"},
+              { "id": "tguserid","name": "TG用户名","val": "1","type": "number","desc": "从机器人获得tgID"},
               {"id": "fqctactivecode","name": "番茄畅听授权码","val": "","type": "text","desc": "从机器人@DavidLoveBot获得key"},
               {"id": "dyjsbactivecode","name": "抖音极速版授权码","val": "","type": "text","desc": "从机器人@DavidLoveBot获得抖音极速版key"}
               ] 
