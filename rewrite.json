@@ -5,8 +5,18 @@
   "author": "liqz",
   "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/rewrite.json",
   "mitmhost": ["tq.xunsl.com","kandian.wkandian.com","ant.xunsl.com","boxjs.av","gaoqingdianshi.com","v3.sdk.haowusong.com","wzq.tenpay.com","nebula.kuaishou.com","api2.e.kuaishou.com"," api.e.kuaishou.com","api.st615.com","r1.nullpointerexception.cn","api-access.pangolin-sdk-toutiao.com",
-              "*.snssdk.com","*.amemv.com","proxy.guodongbaohe.com","m.*.shop","www.xiaodouzhuan.cn"],
+              "*.snssdk.com","*.amemv.com","proxy.guodongbaohe.com","m.*.shop","www.xiaodouzhuan.cn","mp.weixin.qq.com"],
    "rewrite": [
+     
+//************************************************************************************************************************
+//*******************************************************微信自动阅读********************************************************
+//************************************************************************************************************************
+    {
+      "match": "https?://mp\.weixin\.qq\.com/s.+?",
+      "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/wxzdyd.js",
+      "enable": true,
+      "stage": "req"
+    },
 //************************************************************************************************************************
 //*******************************************************果冻宝盒********************************************************
 //************************************************************************************************************************
