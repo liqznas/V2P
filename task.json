@@ -207,7 +207,7 @@
     {
       "name": "晶彩提现",
       "type": "cron",
-      "time": "34 10 * * *",
+      "time": "34 22 * * *",
       "running": true,
       "job": {
         "type": "runjs",
@@ -217,7 +217,7 @@
     {
       "name": "晶彩每日收益统计",
       "type": "cron",
-      "time": "15 23 * * *",
+      "time": "15 21 * * *",
       "running": true,
       "job": {
         "type": "runjs",
