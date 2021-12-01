@@ -5,9 +5,109 @@
   "author": "liqz",
   "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/rewrite.json",
   "mitmhost": ["tq.xunsl.com","kandian.wkandian.com","ant.xunsl.com","boxjs.av","gaoqingdianshi.com","v3.sdk.haowusong.com","wzq.tenpay.com","nebula.kuaishou.com","api2.e.kuaishou.com"," api.e.kuaishou.com","api.st615.com","r1.nullpointerexception.cn","api-access.pangolin-sdk-toutiao.com",
-              "*.snssdk.com","*.amemv.com","proxy.guodongbaohe.com","m.*.shop","www.xiaodouzhuan.cn","mp.weixin.qq.com","api.smartcinema.com.cn"],
+              "*.snssdk.com","*.amemv.com","proxy.guodongbaohe.com","m.*.shop","www.xiaodouzhuan.cn","mp.weixin.qq.com","api.smartcinema.com.cn",
+              "render.shuqireader.com","ocean.shuqireader.com","api-access.pangolin-sdk-toutiao.com"],
    "rewrite": [
- 
+//************************************************************************************************************************
+//*******************************************************书旗小说********************************************************
+//************************************************************************************************************************
+    {
+      "match": "https://ocean.shuqireader.com/api/activity/xapi/signin/v5/signInAction",
+      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
+      "enable": true,
+      "stage": "req"
+    },
+    {
+      "match": "https://ocean.shuqireader.com/api/activity/v1/task/reward",
+      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
+      "enable": true,
+      "stage": "req"
+    },
+    {
+      "match": "https://ocean.shuqireader.com/api/prizecenter/xapi/prize/manual/receive",
+      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
+      "enable": true,
+      "stage": "req"
+    },
+    {
+      "match": "https://api-access.pangolin-sdk-toutiao.com/api/ad/union/sdk/reward_video/reward/",
+      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
+      "enable": true,
+      "stage": "req"
+    },
+     {
+      "match": "https://ocean.shuqireader.com/api/activity/v1/activity/pendant/lottery?",
+      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
+      "enable": true,
+      "stage": "req"
+    },
+    {
+      "match": "https://ocean.shuqireader.com/api/ad/v1/api/prize/lottery",
+      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
+      "enable": true,
+      "stage": "req"
+    },
+     {
+      "match": "https://ocean.shuqireader.com/api/actstage/pendant/lottery/action",
+      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
+      "enable": true,
+      "stage": "req"
+    },
+    {
+      "match": "https://ocean.shuqireader.com/api/activity/activity/v1/lottery/draw?",
+      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
+      "enable": true,
+      "stage": "req"
+    },
+    {
+      "match": "https://ocean.shuqireader.com/api/activity/activity/v1/lottery/info?",
+      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
+      "enable": true,
+      "stage": "req"
+    },
+    {
+      "match": "https://ocean.shuqireader.com/api/ad/adserver/v1/api/getAdInfo?",
+      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
+      "enable": true,
+      "stage": "req"
+    },
+     {
+      "match": "https://ocean.shuqireader.com/api/jcollection/collection/iosapi/reading/upload",
+      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
+      "enable": true,
+      "stage": "req"
+    },
+    {
+      "match": "https://ocean.shuqireader.com/api/activity/v1/activity/boxTask?",
+      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
+      "enable": true,
+      "stage": "req"
+    },
+     
+    {
+      "match": "https://ocean.shuqireader.com/api/ad/v1/api/prize/lottery",
+      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js",
+      "enable": true,
+      "stage": "req"
+    }, 
+    {
+      "match": "https://ocean.shuqireader.com/api/actstage/pendant/lottery/action",
+      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js",
+      "enable": true,
+      "stage": "req"
+    }, 
+    {
+      "match": "https://ocean.shuqireader.com/api/jcollection/collection/iosapi/reading/upload",
+      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js",
+      "enable": true,
+      "stage": "req"
+    }, 
+    {
+      "match": "https://ocean.shuqireader.com/api/activity/v1/task/reward",
+      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js",
+      "enable": true,
+      "stage": "req"
+    }, 
  //************************************************************************************************************************
 //*******************************************************电视家********************************************************
 //************************************************************************************************************************
@@ -878,6 +978,29 @@
         "target": "https://gitee.com/gossh520/script/raw/master/gdbhapp.js"
       }
     },
+//************************************************************************************************************************
+//***********************************************************书旗阅读**************************************************
+//************************************************************************************************************************
+    {
+      "name": "书旗阅读日常任务",
+      "type": "cron",
+      "time": "20 6-22/2 * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js"
+      }
+    },
+    {
+      "name": "书旗阅读每日任务",
+      "type": "cron",
+      "time": "*/6 * * * *",
+      "running": true,
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js"
+      }
+    }
   ]
  }
 }
