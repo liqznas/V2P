@@ -12,7 +12,7 @@
       "time": "0 0 8/16 * * *",
       "job": {
         "type": "runjs",
-        "target": "https://gitee.com/tom210120/tom/raw/master/QKHQ/qkhq.js"
+        "target": "https://raw.githubusercontent.com/YaphetS0903/JStest/main/djxs.js"
       }
     },
      {
