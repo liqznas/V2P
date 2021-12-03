@@ -6,8 +6,17 @@
   "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/rewrite.json",
   "mitmhost": ["tq.xunsl.com","kandian.wkandian.com","ant.xunsl.com","boxjs.av","gaoqingdianshi.com","v3.sdk.haowusong.com","wzq.tenpay.com","nebula.kuaishou.com","api2.e.kuaishou.com"," api.e.kuaishou.com","api.st615.com","r1.nullpointerexception.cn","api-access.pangolin-sdk-toutiao.com",
               "*.snssdk.com","*.amemv.com","proxy.guodongbaohe.com","m.*.shop","www.xiaodouzhuan.cn","mp.weixin.qq.com","api.smartcinema.com.cn",
-              "render.shuqireader.com","ocean.shuqireader.com","api-access.pangolin-sdk-toutiao.com","*.bspapp.com"],
+              "render.shuqireader.com","ocean.shuqireader.com","api-access.pangolin-sdk-toutiao.com","*.bspapp.com","equities.sunwaystech.com"],
    "rewrite": [
+//************************************************************************************************************************
+//*******************************************************趣看行情********************************************************
+//************************************************************************************************************************
+    {
+      "match": "https://equities.sunwaystech.com/guess",
+      "target": "https://gitee.com/tom210120/tom/raw/master/QKHQ/qkhq.js",
+      "enable": true,
+      "stage": "req"
+    },
 //************************************************************************************************************************
 //*******************************************************鸭子********************************************************
 //************************************************************************************************************************
