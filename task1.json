@@ -4,8 +4,7 @@
    "author": "llll",
    "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/task.json", 
    "list": [
-      {"name": "趣看行情定时", "type": "cron","time": "0 0 8/16 * * *",
-       "job": {"type": "runjs","target": "https://gitee.com/tom210120/tom/raw/master/QKHQ/qkhq.js"}}, 
+      {"name": "趣看行情定时", "type": "cron","time": "0 0 8/16 * * *","job": {"type": "runjs","target": "https://gitee.com/tom210120/tom/raw/master/QKHQ/qkhq.js"}}
 
    ]
 }
