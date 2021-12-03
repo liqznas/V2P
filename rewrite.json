@@ -240,14 +240,8 @@
 //*****************************************************腾讯自选股*************************************************************
 //****************************************************************************************************************************
     {
-      "match": "https://zqact03.tenpay.com/activity/page/raisebull/",
-      "target": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txs_cookie.js",
-      "enable": true,
-      "stage": "res"
-    },
-    {
-      "match": "https://wzq.tenpay.com/cgi-bin/redpoint.fcgi?",
-      "target": "https://raw.githubusercontent.com/CenBoMin/GithubSync/main/TXSTOCK/txs_cookie.js",
+      "match": "https://wzq.tenpay.com/cgi-bin/activity_task_daily.fcgi?",
+      "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/txstock.js",
       "enable": true,
       "stage": "res"
     },
