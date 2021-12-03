@@ -6,7 +6,17 @@
   "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/task.json", 
   "list": 
     [ 
-          {
+      
+     {
+      "name": "可达鸭定时",
+      "type": "cron",
+      "time": "43 6-22/2 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/ydyy.js"
+      }
+    },
+    {
       "name": "移动电影院",
       "type": "cron",
       "time": "43 6-22/2 * * *",
