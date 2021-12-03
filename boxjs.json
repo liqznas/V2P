@@ -23,7 +23,9 @@
               { "id": "tguserid","name": "TG用户名","val": "88114422","type": "number","desc": "从机器人获得tgID"},
               {"id": "fqctactivecode","name": "番茄畅听授权码","val": "2132bc26fff209fd2702e22b8e531253","type": "text","desc": "从机器人@DavidLoveBot获得key"},
               {"id": "dyjsbactivecode","name": "抖音极速版授权码","val": "","type": "text","desc": "从机器人@DavidLoveBot获得抖音极速版key"},
-              {"id": "jjkdyactivecode","name": "可达鸭授权码","val": "","type": "90d50f8379232d0b147569a73e1a81","desc": "从机器人@DavidLoveBot获得可达鸭key"},
+              {"id": "jjkdyactivecode","name": "可达鸭授权码","val": "90d50f8379232d0b147569a73e1a81","type": "text","desc": "从机器人@DavidLoveBot获得可达鸭key"},
+              {"id": "jjkdyuserck","name": "可达鸭授权码","val": "1","type": "number","desc": "可达鸭账号数"},
+              
               ] 
           }]
 }
