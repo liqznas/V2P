@@ -68,6 +68,6 @@
    {"name": "果冻宝盒","type": "cron","time": "10 8 * * * ","running": true,"job": {"type": "runjs","target": "https://gitee.com/gossh520/script/raw/master/gdbhapp.js"}},
    
    {"name": "书旗阅读日常任务","type": "cron","time": "20 6-22/2 * * *","running": true,"job": {"type": "runjs","target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js"}},
-   {"name": "书旗阅读每日任务","type": "cron","time": "*/6 * * * *","running": true,"job": {"type": "runjs","target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js"}}, 
+   {"name": "书旗阅读每日任务","type": "cron","time": "*/6 * * * *","running": true,"job": {"type": "runjs","target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js"}}
    ]
    }
