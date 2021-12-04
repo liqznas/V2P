@@ -6,6 +6,15 @@
   "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/task.json", 
   "list": 
     [
+      {
+      "name": "全球购骑士特权",
+      "type": "cron",
+      "time": "0 * * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/blackUnique.js"
+      }
+    },
    {
       "name": "睡觉宝",
       "type": "cron",
