@@ -5,7 +5,16 @@
   "author": "llll",    
   "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/task.json", 
   "list": 
-    [  
+    [
+   {
+      "name": "睡觉宝",
+      "type": "cron",
+      "time": "0,30 6,12,13,18,21 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://gitee.com/tom210120/tom/raw/master/SJB/sjb.js"
+      }
+    },
     {
       "name": "得间小说",
       "type": "cron",
