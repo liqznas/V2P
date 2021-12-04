@@ -27,7 +27,7 @@
      {
       "name": "趣看行情定时",
       "type": "cron",
-      "time": "0 0 8/16 * * *",
+      "time": "0 6-16/1 * * *",
       "job": {
         "type": "runjs",
         "target": "https://gitee.com/tom210120/tom/raw/master/QKHQ/qkhq.js"
