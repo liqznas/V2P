@@ -7,6 +7,15 @@
   "list": 
     [
       {
+      "name": "快看点",
+      "type": "cron",
+      "time": "*/30 8-15 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/kkd.js"
+      }
+    },      
+      {
       "name": "全球购骑士特权",
       "type": "cron",
       "time": "0 * * * *",
