@@ -4,7 +4,12 @@
   "note": "仅供参考",
   "author": "li",
   "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/rewrite.json",
-  "mitmhost": [],
+  "mitmhost": ["ant.xunsl.com","api-access.pangolin-sdk-toutiao.com","api2.e.kuaishou.com","api.e.kuaishou.com",
+               "api.smartcinema.com.cn", "api.st615.com","api.yuncheapp.cn","boxjs.av","dj.palmestore.com","equities.sunwaystech.com","gaoqingdianshi.com",
+               "kandian.wkandian.com","mapi.shuijiaobao.cn","mp.weixin.qq.com","m.*.shop","nebula.kuaishou.com","ocean.shuqireader.com",
+               "proxy.guodongbaohe.com", "r1.nullpointerexception.cn","render.shuqireader.com",
+               "tq.xunsl.com","v3.sdk.haowusong.com","wzq.tenpay.com","www.xiaodouzhuan.cn","yuekandian.yichengw.cn"
+               "*.bspapp.com","*.amemv.com","*.chuxingyouhui.com","*.snssdk.com"],
    "rewrite": [
  //************************************************************************************************************************
 //*******************************************************悦看点********************************************************
@@ -18,12 +23,7 @@
 //************************************************************************************************************************
 //*******************************************************快看点********************************************************
 //************************************************************************************************************************
-    {
-      "match": "https:\/\/api\.yuncheapp\.cn\/pearl-incentive\/api\/v1\/task\/intervalAward\/receive",
-      "target": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/kkd.js",
-      "enable": true,
-      "stage": "req"
-    }, 
+ 
     {
       "match": "https://api.yuncheapp.cn/pearl-incentive/api/v1/task/signIn/*",
       "target": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/kkd.js",
