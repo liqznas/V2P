@@ -6,6 +6,15 @@
   "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/task.json", 
   "list": 
     [
+    {
+      "name": "悦看点",
+      "type": "cron",
+      "time": "10 9 * * *",
+      "job": {
+        "type": "runjs",
+        "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/ykd.js"
+      }
+    },
       {
       "name": "快看点",
       "type": "cron",
