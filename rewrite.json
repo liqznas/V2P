@@ -265,6 +265,12 @@
             "stage": "res"
         },
         {
+            "match": "http://.+/api/v2/device/info",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/dsjtx.js",
+            "enable": true,
+            "stage": "res"
+        },        
+        {
             "match": "https://api.uutequan.com/v1/welfare/page",
             "target": "https://raw.githubusercontent.com/YaphetS0903/JStest/main/flhs.js",
             "enable": true,
