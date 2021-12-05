@@ -48,6 +48,12 @@
             "enable": true,
             "stage": "req"
         },
+       {
+            "match": "https:\/\/api\.yuncheapp\.cn\/pearl-incentive\/api\/v1\/task\/intervalAward\/receive",
+            "target": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/kkd.js",
+            "enable": true,
+            "stage": "req"
+      },
         {
             "match": "https://pyp-api.chuxingyouhui.com/api/app/userCenter/v1/info",
             "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/blackUnique.js",
