@@ -4,12 +4,22 @@
   "note": "仅供参考",
   "author": "li",
   "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/rewrite.json",
-  "mitmhost": ["tq.xunsl.com","kandian.wkandian.com","ant.xunsl.com","boxjs.av","gaoqingdianshi.com","v3.sdk.haowusong.com","wzq.tenpay.com","nebula.kuaishou.com",
-               "api2.e.kuaishou.com"," api.e.kuaishou.com","api.st615.com","r1.nullpointerexception.cn","api-access.pangolin-sdk-toutiao.com",
-              "*.snssdk.com","*.amemv.com","proxy.guodongbaohe.com","m.*.shop","www.xiaodouzhuan.cn","mp.weixin.qq.com","api.smartcinema.com.cn",
-              "dj.palmestore.com","render.shuqireader.com","ocean.shuqireader.com","api-access.pangolin-sdk-toutiao.com","*.bspapp.com","equities.sunwaystech.com",
-              "mapi.shuijiaobao.cn","*.chuxingyouhui.com","api.yuncheapp.cn"],
+  "mitmhost": ["ant.xunsl.com","api-access.pangolin-sdk-toutiao.com","api2.e.kuaishou.com","api.e.kuaishou.com",
+               "api.smartcinema.com.cn", "api.st615.com","api.yuncheapp.cn","boxjs.av", "dj.palmestore.com","equities.sunwaystech.com","gaoqingdianshi.com",
+               "kandian.wkandian.com","mapi.shuijiaobao.cn","mp.weixin.qq.com","m.*.shop","nebula.kuaishou.com","ocean.shuqireader.com",
+               "proxy.guodongbaohe.com", "r1.nullpointerexception.cn","render.shuqireader.com",
+               "tq.xunsl.com","v3.sdk.haowusong.com","wzq.tenpay.com","www.xiaodouzhuan.cn",,"yuekandian.yichengw.cn"
+               "*.bspapp.com","*.amemv.com","*.chuxingyouhui.com","*.snssdk.com"],
    "rewrite": [
+ //************************************************************************************************************************
+//*******************************************************悦看点********************************************************
+//************************************************************************************************************************
+    {
+      "match": "https://yuekandian.yichengw.cn/api/v1/reward/coin?",
+      "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/ykd.js",
+      "enable": true,
+      "stage": "req"
+    }, 
 //************************************************************************************************************************
 //*******************************************************快看点********************************************************
 //************************************************************************************************************************
