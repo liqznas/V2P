@@ -212,22 +212,34 @@
         },
         {
             "match": "luckycat/aweme/v1/task/sign_in/detail?",
-            "target": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/dyjsb.js",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/dyjsb.js",
             "enable": true,
             "stage": "res"
         },
         {
-            "match": "luckycat/aweme/v1/task/done/read?",
-            "target": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/dyjsb.js",
+            "match": "luckycat/aweme/v1/task/done/read? ",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/dyjsb.js",
             "enable": true,
             "stage": "res"
         },
         {
-            "match": "luckycat/aweme/v1/task/walk/step_submit?",
-            "target": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/dyjsb.js",
+            "match": "luckycat/aweme/v1/task/done/treasure_task? ",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/dyjsb.js",
             "enable": true,
             "stage": "res"
         },
+        {
+            "match": "luckycat/aweme/v1/task/done/excitation_ad_treasure_box? ",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/dyjsb.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "luckycat/aweme/v1/task/done/excitation_ad? ",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/dyjsb.js",
+            "enable": true,
+            "stage": "res"
+        },        
         {
             "match": "https://nebula.kuaishou.com/rest/n/nebula/activity/earn/overview/basicInfo",
             "target": "https://raw.githubusercontent.com/liuqi6968/-/main/ks_js.js",
