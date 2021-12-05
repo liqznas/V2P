@@ -1,513 +1,466 @@
-{ 
-  "name": "V2P重写订阅",
-  "type": "rewrite",
-  "note": "仅供参考",
-  "author": "li",
-  "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/rewrite.json",
-  "mitmhost": ["ant.xunsl.com","api-access.pangolin-sdk-toutiao.com","api2.e.kuaishou.com","api.e.kuaishou.com",
-               "api.smartcinema.com.cn", "api.st615.com","api.yuncheapp.cn","boxjs.av","dj.palmestore.com","equities.sunwaystech.com","gaoqingdianshi.com",
-               "kandian.wkandian.com","mapi.shuijiaobao.cn","mp.weixin.qq.com","m.*.shop","nebula.kuaishou.com","ocean.shuqireader.com",
-               "proxy.guodongbaohe.com","r1.nullpointerexception.cn","render.shuqireader.com",
-               "tq.xunsl.com","v3.sdk.haowusong.com","wzq.tenpay.com","www.xiaodouzhuan.cn","yuekandian.yichengw.cn"
-               "*.bspapp.com","*.amemv.com","*.chuxingyouhui.com","*.snssdk.com"],
-   "rewrite": [
-//************************************************************************************************************************
-//*******************************************************悦看点********************************************************
-//************************************************************************************************************************
-    {
-      "match": "https://yuekandian.yichengw.cn/api/v1/reward/coin?",
-      "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/ykd.js",
-      "enable": true,
-      "stage": "req"
-    }, 
-//************************************************************************************************************************
-//*******************************************************快看点********************************************************
-//************************************************************************************************************************
-     {
-      "match": "https://api.yuncheapp.cn/pearl-incentive/api/v1/task/signIn/*",
-      "target": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/kkd.js",
-      "enable": true,
-      "stage": "req"
-    }, 
-    {
-      "match": "https:\/\/api\.yuncheapp\.cn\/pearl-incentive\/api\/v1\/task\/intervalAward\/receive",
-      "target": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/kkd.js",
-      "enable": true,
-      "stage": "req"
-    },
-//************************************************************************************************************************
-//*******************************************************全球骑士购********************************************************
-//************************************************************************************************************************
-    {
-      "match": "https://pyp-api.chuxingyouhui.com/api/app/userCenter/v1/info",
-      "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/blackUnique.js",
-      "enable": true,
-      "stage": "req"
-    },  
-       {
-      "match": "https://market.chuxingyouhui.com/promo-bargain-api/activity/mqq/api/indexTopInfo?",
-      "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/blackUnique.js",
-      "enable": true,
-      "stage": "req"
-    }, 
-//************************************************************************************************************************
-//*******************************************************睡觉宝********************************************************
-//************************************************************************************************************************
-    {
-      "match": "https://mapi.shuijiaobao.cn/login/code",
-      "target": "https://gitee.com/tom210120/tom/raw/master/SJB/sjb.js",
-      "enable": true,
-      "stage": "req"
-    },  
-     //************************************************************************************************************************
-//*******************************************************得间小说********************************************************
-//************************************************************************************************************************
-    {
-      "match": "https://dj.palmestore.com/zycl/gold/receive?",
-      "target": "https://raw.githubusercontent.com/YaphetS0903/JStest/main/djxs.js",
-      "enable": true,
-      "stage": "req"
-    },     
-//************************************************************************************************************************
-//*******************************************************趣看行情********************************************************
-//************************************************************************************************************************
-    {
-      "match": "https://equities.sunwaystech.com/guess",
-      "target": "https://gitee.com/tom210120/tom/raw/master/QKHQ/qkhq.js",
-      "enable": true,
-      "stage": "req"
-    },
-//************************************************************************************************************************
-//*******************************************************鸭子********************************************************
-//************************************************************************************************************************
-    {
-      "match": "https://.+.bspapp.com/.+/hall/loadhall",
-      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/jjkdy.js",
-      "enable": true,
-      "stage": "req"
-    },
-//************************************************************************************************************************
-//*******************************************************书旗小说********************************************************
-//************************************************************************************************************************
-    {
-      "match": "https://ocean.shuqireader.com/api/activity/xapi/signin/v5/signInAction",
-      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
-      "enable": true,
-      "stage": "req"
-    },
-    {
-      "match": "https://ocean.shuqireader.com/api/activity/v1/task/reward",
-      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
-      "enable": true,
-      "stage": "req"
-    },
-    {
-      "match": "https://ocean.shuqireader.com/api/prizecenter/xapi/prize/manual/receive",
-      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
-      "enable": true,
-      "stage": "req"
-    },
-    {
-      "match": "https://api-access.pangolin-sdk-toutiao.com/api/ad/union/sdk/reward_video/reward/",
-      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
-      "enable": true,
-      "stage": "req"
-    },
-     {
-      "match": "https://ocean.shuqireader.com/api/activity/v1/activity/pendant/lottery?",
-      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
-      "enable": true,
-      "stage": "req"
-    },
-    {
-      "match": "https://ocean.shuqireader.com/api/ad/v1/api/prize/lottery",
-      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
-      "enable": true,
-      "stage": "req"
-    },
-     {
-      "match": "https://ocean.shuqireader.com/api/actstage/pendant/lottery/action",
-      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
-      "enable": true,
-      "stage": "req"
-    },
-    {
-      "match": "https://ocean.shuqireader.com/api/activity/activity/v1/lottery/draw?",
-      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
-      "enable": true,
-      "stage": "req"
-    },
-    {
-      "match": "https://ocean.shuqireader.com/api/activity/activity/v1/lottery/info?",
-      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
-      "enable": true,
-      "stage": "req"
-    },
-    {
-      "match": "https://ocean.shuqireader.com/api/ad/adserver/v1/api/getAdInfo?",
-      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
-      "enable": true,
-      "stage": "req"
-    },
-     {
-      "match": "https://ocean.shuqireader.com/api/jcollection/collection/iosapi/reading/upload",
-      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
-      "enable": true,
-      "stage": "req"
-    },
-    {
-      "match": "https://ocean.shuqireader.com/api/activity/v1/activity/boxTask?",
-      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
-      "enable": true,
-      "stage": "req"
-    },
-     
-    {
-      "match": "https://ocean.shuqireader.com/api/ad/v1/api/prize/lottery",
-      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js",
-      "enable": true,
-      "stage": "req"
-    }, 
-    {
-      "match": "https://ocean.shuqireader.com/api/actstage/pendant/lottery/action",
-      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js",
-      "enable": true,
-      "stage": "req"
-    }, 
-    {
-      "match": "https://ocean.shuqireader.com/api/jcollection/collection/iosapi/reading/upload",
-      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js",
-      "enable": true,
-      "stage": "req"
-    }, 
-    {
-      "match": "https://ocean.shuqireader.com/api/activity/v1/task/reward",
-      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js",
-      "enable": true,
-      "stage": "req"
-    }, 
-//************************************************************************************************************************
-//*******************************************************移动电影院********************************************************
-//************************************************************************************************************************
-    {
-      "match": "https://api.smartcinema.com.cn/.+",
-      "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/ydyy.js",
-      "enable": true,
-      "stage": "req"
-    },
-//************************************************************************************************************************
-//*******************************************************果冻宝盒********************************************************
-//************************************************************************************************************************
-    {
-      "match": "https://proxy.guodongbaohe.com/income/mymoney",
-      "target": "https://raw.githubusercontent.com/wx13069/JD/master/gdbh.js",
-      "enable": true,
-      "stage": "req"
-    },
-//************************************************************************************************************************
-//*******************************************************聚看点********************************************************
-//************************************************************************************************************************
-    {
-      "match": "https://www.xiaodouzhuan.cn/jkd/weixin20/member/code.jsp?",
-      "target": "https://gitee.com/gossh520/script/raw/master/jkdapp.js",
-      "enable": true,
-      "stage": "req"
-    },
- //************************************************************************************************************************
-//*******************************************************番茄畅听********************************************************
-//************************************************************************************************************************
-    {
-      "match": "luckycat/novel_fm/v1/task/sign_in/*",
-      "target": "https://cdn.jsdelivr.net/gh/bluesmallpig/scripts/fqct.js",
-      "enable": true,
-      "stage": "req"
-    },
-//************************************************************************************************************************
-//*******************************************************抖音极速版********************************************************
-//************************************************************************************************************************
-    {
-      "match": "luckycat/aweme/v1/task/sign_in/detail?",
-      "target": "https://cdn.jsdelivr.net/gh/bluesmallpig/scripts/dyjsb.js",
-      "enable": true,
-      "stage": "res"
-    },
-   {
-      "match": "luckycat/aweme/v1/task/done/read?",
-      "target": "https://cdn.jsdelivr.net/gh/bluesmallpig/scripts/dyjsb.js",
-      "enable": true,
-      "stage": "res"
-    },
-    {
-      "match": "luckycat/aweme/v1/task/walk/step_submit?",
-      "target": "https://cdn.jsdelivr.net/gh/bluesmallpig/scripts/dyjsb.js",
-      "enable": true,
-      "stage": "res"
-    },
-//************************************************************************************************************************
-//*******************************************************快手极速版********************************************************
-//************************************************************************************************************************
-    {
-      "match": "https://nebula.kuaishou.com/rest/n/nebula/activity/earn/overview/basicInfo",
-      "target": "https://raw.githubusercontent.com/liuqi6968/-/main/ks_js.js",
-      "enable": true,
-      "stage": "res"
-    },
 {
-      "match": "https://api2.e.kuaishou.com/rest/r/reward/task/status",
-      "target": "https://raw.githubusercontent.com/liuqi6968/-/main/ks_js.js",
-      "enable": true,
-      "stage": "res"
-    },
-{
-      "match": "https://api.e.kuaishou.com/rest/e/v1/reward/ad",
-      "target": "https://raw.githubusercontent.com/liuqi6968/-/main/ks_js.js",
-      "enable": true,
-      "stage": "res"
-    },
-//****************************************************************************************************************************
-//******************************************************九章头条**************************************************************
-//***************************************************************************************************************************
-  {
-      "match": "https://api.st615.com/v1/user/info?",
-      "target": "https://raw.githubusercontent.com/xl2101200/-/main/jztt.js",
-      "enable": true,
-      "stage": "res"
-    },
-//***************************************************************************************************************************
-//*****************************************************电视家*****************************************************************
-//****************************************************************************************************************************
-   {
-      "match": "http://pay.gaoqingdianshi.com/api/v2/cash/withdrawal?",
-      "target": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/dsj.js",
-      "enable": true,
-      "stage": "res"
-    },
-
-   {
-      "match": "http://api.gaoqingdianshi.com/api/*",
-      "target": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/dsj.js",
-      "enable": true,
-      "stage": "res"
-    },
-          // 电视家
-    {
-      "match": "https://api.uutequan.com/v1/welfare/page",
-      "target": "https://raw.githubusercontent.com/YaphetS0903/JStest/main/flhs.js",
-      "enable": true,
-      "stage": "res"
-    },
-//***************************************************************************************************************************
-//*****************************************************都爱玩*****************************************************************
-//****************************************************************************************************************************
-    {
-      "match": "http://v3.sdk.haowusong.com/api/app/web/config",
-      "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/daw.js",
-      "enable": true,
-      "stage": "res"
-    },
-//***************************************************************************************************************************
-//*****************************************************腾讯自选股*************************************************************
-//****************************************************************************************************************************
-    {
-      "match": "https://wzq.tenpay.com/cgi-bin/activity_task_daily.fcgi?",
-      "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/txstock.js",
-      "enable": true,
-      "stage": "res"
-    },
-//***************************************************************************************************************************
-//*****************************************************中青看点*************************************************************
-//****************************************************************************************************************************
-    {
-      "match": "https://kandian.wkandian.com/v5/article/info.json",
-      "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqwz.js",
-      "enable": true,
-      "stage": "res"
-    },
-     {
-      "match": "https://kandian.wkandian.com/v5/CommonReward/toDouble.json",
-      "target": "https://raw.githubusercontent.com/liuqi6968/-/main/zq_fbjl.js",
-      "enable": true,
-      "stage": "res"
-    },
-    {
-      "match": "https://kandian.wkandian.com/v17/Ad/getReward.json",
-      "target": "https://gitee.com/Jxell/js_scripts/raw/main/zq/zq_5_60.js",
-      "enable": true,
-      "stage": "res"
-    },
- {
-      "match": "https://kandian.wkandian.com/v17/Ad/getReward.json",
-      "target": "https://gitee.com/Jxell/js_scripts/raw/main/zq/zq_5_60.js",
-      "enable": true,
-      "stage": "res"
-  }, 
-    {
-      "match": "https://kandian.wkandian.com/V17/Ximalaya/setCompleteSec.json",
-      "target": "https://raw.githubusercontent.com/liuqi6968/-/main/zq_music.js",
-      "enable": true,
-      "stage": "res"
-    },
-    {
-      "match": "https://kandian.wkandian.com/v5/user/stay.json",
-      "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqwz.js",
-      "enable": true,
-      "stage": "res"
-    },
-    {
-      "match": "https://kandian.wkandian.com/v5/CommonReward/toGetReward.json",
-      "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqqd.js",
-      "enable": true,
-      "stage": "res"
-    },
-    {
-      "match": "https://kandian.wkandian.com/v17/NewTask/getTaskList.json",
-      "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_today_score.js",
-      "enable": true,
-      "stage": "res"
-    },
-    {
-      "match": "https://kandian.wkandian.com/v5/nameless/adlickstart.json",
-      "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqkkz.js",
-      "enable": true,
-      "stage": "res"
-    },
-    {
-      "match": "https://kandian.wkandian.com/v5/CommonReward/toGetReward.json",
-      "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqbox.js",
-      "enable": true,
-      "stage": "res"
-    },
-    {
-      "match": "https://kandian.wkandian.com/v5/wechat/withdraw2.json",
-      "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_withdraw.js",
-      "enable": true,
-      "stage": "res"
-    },
-    {
-      "match": "https://kandian.wkandian.com/v5/task/browse_start.json",
-      "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqllz.js",
-      "enable": true,
-      "stage": "res"
-    },
-    {
-      "match": "https://kandian.wkandian.com/v5/Sousuo/playStart.json",
-      "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqssz.js",
-      "enable": true,
-      "stage": "res"
-    },
-//***************************************************************************************************************************
-//*****************************************************晶彩看点*************************************************************
-//****************************************************************************************************************************
-    {
-      "match": "https://ant.xunsl.com/v5/article/info.json",
-      "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/jcwz.js",
-      "enable": true,
-      "stage": "res"
-    },
-    {
-      "match": "https://ant.xunsl.com/v5/article/detail.json",
-      "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/jcwz.js",
-      "enable": true,
-      "stage": "res"
-    },
-    {
-      "match": "https://ant.xunsl.com/v5/nameless/adlickstart.json",
-      "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/jckkz.js",
-      "enable": true,
-      "stage": "res"
-    },
-    {
-      "match": "https://ant.xunsl.com/v5/CommonReward/toGetReward.json",
-      "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/jcqd.js",
-      "enable": true,
-      "stage": "res"
-    },
-    {
-      "match": "https://ant.xunsl.com/v5/CommonReward/toGetReward.json",
-      "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/jcbox.js",
-      "enable": true,
-      "stage": "res"
-    },
-    {
-      "match": "https://ant.xunsl.com/v5/user/stay.json",
-      "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/jcwz.js",
-      "enable": true,
-      "stage": "res"
-    },
-    {
-      "match": "https://ant.xunsl.com/v5/wechat/withdraw2.json",
-      "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/jc_withdraw.js",
-      "enable": true,
-      "stage": "res"
-    },
-    {
-      "match": "https://ant.xunsl.com/v17/NewTask/getTaskList.json",
-      "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/jc_today_score.js",
-      "enable": true,
-      "stage": "res"
-    },
- //***************************************************************************************************************************
-//*****************************************************晶彩天气*************************************************************
-//****************************************************************************************************************************
-    {
-      "match": "https://tq.xunsl.com/v17/NewTask/getTaskListByWeather.json",
-      "stage": "req",
-      "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_rewrite.js",
-      "enable": true
-    },
-    {
-      "match": "https://tq.xunsl.com/v5/CommonReward/toGetReward.json",
-      "stage": "req",
-      "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_rewrite.js",
-      "enable": true
-    },
-    {
-      "match": "https://tq.xunsl.com/v5/article/info.json",
-      "stage": "req",
-      "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_rewrite.js",
-      "enable": true
-    },
-    {
-      "match": "https://tq.xunsl.com/v5/article/detail.json",
-      "stage": "req",
-      "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_rewrite.js",
-      "enable": true
-    },
-    {
-      "match": "https://tq.xunsl.com/v5/user/stay.json",
-      "stage": "req",
-      "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_rewrite.js",
-      "enable": true
-    },
-    {
-      "match": "https://tq.xunsl.com/v5/nameless/adlickstart.json",
-      "stage": "req",
-      "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_rewrite.js",
-      "enable": true
-    },
-    {
-      "match": "https://tq.xunsl.com/v5/wechat/withdraw2.json",
-      "stage": "req",
-      "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_rewrite.js",
-      "enable": true
-    },
-    {
-      "match": "https://tq.xunsl.com/v5/Weather/giveBoxOnWeather.json",
-      "stage": "req",
-      "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_rewrite.js",
-      "enable": true
-    },
-    {
-      "match": "https://tq.xunsl.com/v5/weather/giveTimeInterval.json",
-      "stage": "req",
-      "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_rewrite.js",
-      "enable": true
-    },
-    {
-      "match": "https://tq.xunsl.com/v5/CommonReward/toDouble.json",
-      "stage": "req",
-      "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_rewrite.js",
-      "enable": true
-    }
-  ]
- }
+    "name": "V2P重写订阅",
+    "type": "rewrite",
+    "note": "仅供参考",
+    "author": "li",
+    "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/rewrite.json",
+    "mitmhost": [
+        "ant.xunsl.com",
+        "api-access.pangolin-sdk-toutiao.com",
+        "api2.e.kuaishou.com",
+        "api.e.kuaishou.com",
+        "api.smartcinema.com.cn",
+        "api.st615.com",
+        "api.yuncheapp.cn",
+        "boxjs.av",
+        "dj.palmestore.com",
+        "equities.sunwaystech.com",
+        "gaoqingdianshi.com",
+        "kandian.wkandian.com",
+        "mapi.shuijiaobao.cn",
+        "mp.weixin.qq.com",
+        "m.*.shop",
+        "nebula.kuaishou.com",
+        "ocean.shuqireader.com",
+        "proxy.guodongbaohe.com",
+        "r1.nullpointerexception.cn",
+        "render.shuqireader.com",
+        "tq.xunsl.com",
+        "v3.sdk.haowusong.com",
+        "wzq.tenpay.com",
+        "www.xiaodouzhuan.cn",
+        "yuekandian.yichengw.cn",
+        "*.bspapp.com",
+        "*.amemv.com",
+        "*.chuxingyouhui.com",
+        "*.snssdk.com"
+    ],
+    "rewrite": [
+        {
+            "match": "https://yuekandian.yichengw.cn/api/v1/reward/coin?",
+            "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/ykd.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://api.yuncheapp.cn/pearl-incentive/api/v1/task/signIn/*",
+            "target": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/kkd.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://pyp-api.chuxingyouhui.com/api/app/userCenter/v1/info",
+            "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/blackUnique.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://market.chuxingyouhui.com/promo-bargain-api/activity/mqq/api/indexTopInfo?",
+            "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/blackUnique.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://mapi.shuijiaobao.cn/login/code",
+            "target": "https://gitee.com/tom210120/tom/raw/master/SJB/sjb.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://dj.palmestore.com/zycl/gold/receive?",
+            "target": "https://raw.githubusercontent.com/YaphetS0903/JStest/main/djxs.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://equities.sunwaystech.com/guess",
+            "target": "https://gitee.com/tom210120/tom/raw/master/QKHQ/qkhq.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://.+.bspapp.com/.+/hall/loadhall",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/jjkdy.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://ocean.shuqireader.com/api/activity/xapi/signin/v5/signInAction",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://ocean.shuqireader.com/api/activity/v1/task/reward",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://ocean.shuqireader.com/api/prizecenter/xapi/prize/manual/receive",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://api-access.pangolin-sdk-toutiao.com/api/ad/union/sdk/reward_video/reward/",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://ocean.shuqireader.com/api/activity/v1/activity/pendant/lottery?",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://ocean.shuqireader.com/api/ad/v1/api/prize/lottery",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://ocean.shuqireader.com/api/actstage/pendant/lottery/action",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://ocean.shuqireader.com/api/activity/activity/v1/lottery/draw?",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://ocean.shuqireader.com/api/activity/activity/v1/lottery/info?",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://ocean.shuqireader.com/api/ad/adserver/v1/api/getAdInfo?",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://ocean.shuqireader.com/api/jcollection/collection/iosapi/reading/upload",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://ocean.shuqireader.com/api/activity/v1/activity/boxTask?",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://ocean.shuqireader.com/api/ad/v1/api/prize/lottery",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://ocean.shuqireader.com/api/actstage/pendant/lottery/action",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://ocean.shuqireader.com/api/jcollection/collection/iosapi/reading/upload",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://ocean.shuqireader.com/api/activity/v1/task/reward",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://api.smartcinema.com.cn/.+",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/ydyy.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://proxy.guodongbaohe.com/income/mymoney",
+            "target": "https://raw.githubusercontent.com/wx13069/JD/master/gdbh.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://www.xiaodouzhuan.cn/jkd/weixin20/member/code.jsp?",
+            "target": "https://gitee.com/gossh520/script/raw/master/jkdapp.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "luckycat/novel_fm/v1/task/sign_in/*",
+            "target": "https://cdn.jsdelivr.net/gh/bluesmallpig/scripts/fqct.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "luckycat/aweme/v1/task/sign_in/detail?",
+            "target": "https://cdn.jsdelivr.net/gh/bluesmallpig/scripts/dyjsb.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "luckycat/aweme/v1/task/done/read?",
+            "target": "https://cdn.jsdelivr.net/gh/bluesmallpig/scripts/dyjsb.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "luckycat/aweme/v1/task/walk/step_submit?",
+            "target": "https://cdn.jsdelivr.net/gh/bluesmallpig/scripts/dyjsb.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://nebula.kuaishou.com/rest/n/nebula/activity/earn/overview/basicInfo",
+            "target": "https://raw.githubusercontent.com/liuqi6968/-/main/ks_js.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://api2.e.kuaishou.com/rest/r/reward/task/status",
+            "target": "https://raw.githubusercontent.com/liuqi6968/-/main/ks_js.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://api.e.kuaishou.com/rest/e/v1/reward/ad",
+            "target": "https://raw.githubusercontent.com/liuqi6968/-/main/ks_js.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://api.st615.com/v1/user/info?",
+            "target": "https://raw.githubusercontent.com/xl2101200/-/main/jztt.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "http://pay.gaoqingdianshi.com/api/v2/cash/withdrawal?",
+            "target": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/dsj.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "http://api.gaoqingdianshi.com/api/*",
+            "target": "https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/dsj.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://api.uutequan.com/v1/welfare/page",
+            "target": "https://raw.githubusercontent.com/YaphetS0903/JStest/main/flhs.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "http://v3.sdk.haowusong.com/api/app/web/config",
+            "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/daw.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://wzq.tenpay.com/cgi-bin/activity_task_daily.fcgi?",
+            "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/txstock.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://kandian.wkandian.com/v5/article/info.json",
+            "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqwz.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://kandian.wkandian.com/v5/CommonReward/toDouble.json",
+            "target": "https://raw.githubusercontent.com/liuqi6968/-/main/zq_fbjl.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://kandian.wkandian.com/v17/Ad/getReward.json",
+            "target": "https://gitee.com/Jxell/js_scripts/raw/main/zq/zq_5_60.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://kandian.wkandian.com/v17/Ad/getReward.json",
+            "target": "https://gitee.com/Jxell/js_scripts/raw/main/zq/zq_5_60.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://kandian.wkandian.com/V17/Ximalaya/setCompleteSec.json",
+            "target": "https://raw.githubusercontent.com/liuqi6968/-/main/zq_music.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://kandian.wkandian.com/v5/user/stay.json",
+            "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqwz.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://kandian.wkandian.com/v5/CommonReward/toGetReward.json",
+            "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqqd.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://kandian.wkandian.com/v17/NewTask/getTaskList.json",
+            "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_today_score.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://kandian.wkandian.com/v5/nameless/adlickstart.json",
+            "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqkkz.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://kandian.wkandian.com/v5/CommonReward/toGetReward.json",
+            "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqbox.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://kandian.wkandian.com/v5/wechat/withdraw2.json",
+            "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zq_withdraw.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://kandian.wkandian.com/v5/task/browse_start.json",
+            "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqllz.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://kandian.wkandian.com/v5/Sousuo/playStart.json",
+            "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/zq/zqssz.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://ant.xunsl.com/v5/article/info.json",
+            "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/jcwz.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://ant.xunsl.com/v5/article/detail.json",
+            "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/jcwz.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://ant.xunsl.com/v5/nameless/adlickstart.json",
+            "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/jckkz.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://ant.xunsl.com/v5/CommonReward/toGetReward.json",
+            "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/jcqd.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://ant.xunsl.com/v5/CommonReward/toGetReward.json",
+            "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/jcbox.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://ant.xunsl.com/v5/user/stay.json",
+            "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/jcwz.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://ant.xunsl.com/v5/wechat/withdraw2.json",
+            "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/jc_withdraw.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://ant.xunsl.com/v17/NewTask/getTaskList.json",
+            "target": "https://raw.githubusercontent.com/shaolin-kongfu/js_scripts/main/jc_today_score.js",
+            "enable": true,
+            "stage": "res"
+        },
+        {
+            "match": "https://tq.xunsl.com/v17/NewTask/getTaskListByWeather.json",
+            "stage": "req",
+            "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_rewrite.js",
+            "enable": true
+        },
+        {
+            "match": "https://tq.xunsl.com/v5/CommonReward/toGetReward.json",
+            "stage": "req",
+            "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_rewrite.js",
+            "enable": true
+        },
+        {
+            "match": "https://tq.xunsl.com/v5/article/info.json",
+            "stage": "req",
+            "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_rewrite.js",
+            "enable": true
+        },
+        {
+            "match": "https://tq.xunsl.com/v5/article/detail.json",
+            "stage": "req",
+            "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_rewrite.js",
+            "enable": true
+        },
+        {
+            "match": "https://tq.xunsl.com/v5/user/stay.json",
+            "stage": "req",
+            "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_rewrite.js",
+            "enable": true
+        },
+        {
+            "match": "https://tq.xunsl.com/v5/nameless/adlickstart.json",
+            "stage": "req",
+            "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_rewrite.js",
+            "enable": true
+        },
+        {
+            "match": "https://tq.xunsl.com/v5/wechat/withdraw2.json",
+            "stage": "req",
+            "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_rewrite.js",
+            "enable": true
+        },
+        {
+            "match": "https://tq.xunsl.com/v5/Weather/giveBoxOnWeather.json",
+            "stage": "req",
+            "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_rewrite.js",
+            "enable": true
+        },
+        {
+            "match": "https://tq.xunsl.com/v5/weather/giveTimeInterval.json",
+            "stage": "req",
+            "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_rewrite.js",
+            "enable": true
+        },
+        {
+            "match": "https://tq.xunsl.com/v5/CommonReward/toDouble.json",
+            "stage": "req",
+            "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jctq/jctq_rewrite.js",
+            "enable": true
+        }
+    ]
+}
