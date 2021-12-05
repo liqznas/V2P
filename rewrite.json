@@ -212,19 +212,19 @@
         },
         {
             "match": "luckycat/aweme/v1/task/sign_in/detail?",
-            "target": "https://cdn.jsdelivr.net/gh/bluesmallpig/scripts/dyjsb.js",
+            "target": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/dyjsb.js",
             "enable": true,
             "stage": "res"
         },
         {
             "match": "luckycat/aweme/v1/task/done/read?",
-            "target": "https://cdn.jsdelivr.net/gh/bluesmallpig/scripts/dyjsb.js",
+            "target": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/dyjsb.js",
             "enable": true,
             "stage": "res"
         },
         {
             "match": "luckycat/aweme/v1/task/walk/step_submit?",
-            "target": "https://cdn.jsdelivr.net/gh/bluesmallpig/scripts/dyjsb.js",
+            "target": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/dyjsb.js",
             "enable": true,
             "stage": "res"
         },
