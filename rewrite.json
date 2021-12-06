@@ -49,7 +49,7 @@
             "stage": "req"
         },
        {
-            "match": "https://api.yuncheapp.cn/pearl-incentive/api/v1/task/intervalAward/receive",
+            "match": "^https:\/\/api\.yuncheapp\.cn\/pearl-incentive\/api\/v1\/task\/intervalAward\/receive",
             "target": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/kkd.js",
             "enable": true,
             "stage": "req"
