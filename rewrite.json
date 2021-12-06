@@ -43,7 +43,7 @@
             "stage": "req"
         },
         {
-            "match": "https://api.yuncheapp.cn/pearl-incentive/api/v1/task/signIn/*",
+            "match": "^https://api.yuncheapp.cn/pearl-incentive/api/v1/task/signIn/*",
             "target": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/kkd.js",
             "enable": true,
             "stage": "req"
