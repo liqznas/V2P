@@ -5,6 +5,15 @@
     "author": "llll",
     "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/task.json",
     "list": [
+       {
+            "name": "成语大师/成语大学士",
+            "type": "cron",
+            "time": "14 8-23/2 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/cyqt.js"
+            }
+        },
         {
             "name": "阅多多",
             "type": "cron",
