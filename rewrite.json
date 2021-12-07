@@ -44,8 +44,8 @@
             "stage": "req"
         },
         {
-            "match": "https://yuekandian.yichengw.cn/api/v1/reward/coin?",
-            "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/ykd.js",
+            "match": "https://yuekandian.yichengw.cn/api/v1/member/profile",
+            "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/ydd.js",
             "enable": true,
             "stage": "req"
         },
