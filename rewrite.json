@@ -39,6 +39,18 @@
     ],
     "rewrite": [
         {
+            "match": ".+/redpacket//f/.+",
+            "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/cyqt.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": ".+/reward_video/reward/",
+            "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/cyqt.js",
+            "enable": true,
+            "stage": "req"
+        },  
+        {
             "match": "https://jiashijijin.01lb.com.cn/api/user/showUserInfo",
             "target": "https://gitee.com/tom210120/tom/raw/master/jscfz.js",
             "enable": true,
