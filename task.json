@@ -6,7 +6,7 @@
     "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/task.json",
     "list": [
         {
-            "name": "悦看点",
+            "name": "阅多多",
             "type": "cron",
             "time": "0-59/15 8-23 * * *",
             "job": {
