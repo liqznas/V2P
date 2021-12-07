@@ -8,10 +8,10 @@
         {
             "name": "悦看点",
             "type": "cron",
-            "time": "10 9 * * *",
+            "time": "0-59/15 8-23 * * *",
             "job": {
                 "type": "runjs",
-                "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/ykd.js"
+                "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/ydd.js"
             }
         },
         {
