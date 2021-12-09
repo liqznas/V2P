@@ -32,15 +32,6 @@
                 "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/ttdt.js"
               }
         },
-         {
-            "name": "天天答题",
-            "type": "cron",
-            "time": "*/4 14-16 * * *",
-            "job": {
-                "type": "runjs",
-                "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/ttdt.js"
-              }
-        },
         {
             "name": "天天猜歌",
             "type": "cron",
