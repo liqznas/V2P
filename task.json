@@ -26,7 +26,7 @@
         {
             "name": "天天答题",
             "type": "cron",
-            "time": "*/4 14-16 * * *",
+            "time": "* 8-23/2 * * *",
             "job": {
                 "type": "runjs",
                 "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/ttdt.js"
