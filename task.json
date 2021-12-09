@@ -5,6 +5,69 @@
     "author": "llll",
     "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/task.json",
     "list": [
+        {
+            "name": "番茄小说",
+            "type": "cron",
+            "time": "* 8-23/2 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://github.com/Ariszy/Private-Script/blob/master/Scripts/fqxs.js"
+              }
+        },
+        {
+            "name": "天天消方块",
+            "type": "cron",
+            "time": "*/4 17-19 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/ttxfk.js"
+              }
+        },
+        {
+            "name": "天天答题",
+            "type": "cron",
+            "time": "*/4 14-16 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/ttdt.js"
+              }
+        },
+         {
+            "name": "天天答题",
+            "type": "cron",
+            "time": "*/4 14-16 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/ttdt.js"
+              }
+        },
+        {
+            "name": "天天猜歌",
+            "type": "cron",
+            "time": "*/4 10-12 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/ttcg.js"
+            }
+        },
+         {
+            "name": "欢乐消方块",
+            "type": "cron",
+            "time": "*/4 10-12 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/hlxfk.js"
+            }
+        },
+       {
+            "name": "今日头条",
+            "type": "cron",
+            "time": "5,35 8-23 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/jrtt.js"
+            }
+        },
        {
             "name": "成语大师/成语大学士",
             "type": "cron",
