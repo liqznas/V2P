@@ -35,9 +35,53 @@
         "*.bspapp.com",
         "*.amemv.com",
         "*.chuxingyouhui.com",
-        "*.snssdk.com"
+        "*.snssdk.com",
+        "*.toutiaoapi.com",
+        "*.springglasses.com"
     ],
     "rewrite": [
+       {
+            "match": "luckycat/novel/v1/task/sign_in/*",
+            "target": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/fqxs.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://num.springglasses.com/api/app/ios/credit/coin?",
+            "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/ttxfk.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://speeddati.springglasses.com/api/app/ios/credit/coin?",
+            "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/ttdt.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://fly.springglasses.com/api/app/ios/credit/coin?",
+            "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/ttcg.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
+            "match": "https://fish.springglasses.com/api/app/ios/credit/coin?",
+            "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/hlxfk.js",
+            "enable": true,
+            "stage": "req"
+        },
+       {
+            "match": "\/score_task\/v1\/task\/(sign_in|get_read_bonus)",
+            "target": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/jrtt.js",
+            "enable": true,
+            "stage": "req"
+        },
+       {
+            "match": "\/ttgame\/game_farm\/home_info",
+            "target": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/jrtt.js",
+            "enable": true,
+            "stage": "req"
+        },        
         {
             "match": ".+/redpacket//f/.+",
             "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/cyqt.js",
