@@ -72,18 +72,6 @@
             "enable": true,
             "stage": "req"
         },
-       {
-            "match": "\/score_task\/v1\/task\/(sign_in|get_read_bonus)",
-            "target": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/jrtt.js",
-            "enable": true,
-            "stage": "req"
-        },
-       {
-            "match": "\/ttgame\/game_farm\/home_info",
-            "target": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/jrtt.js",
-            "enable": true,
-            "stage": "req"
-        },        
         {
             "match": ".+/redpacket//f/.+",
             "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/cyqt.js",
