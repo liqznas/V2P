@@ -141,12 +141,12 @@
             }
         },
         {
-            "name": "抖音极速版",
+            "name": "今日头条极速版",
             "type": "cron",
-            "time": "3 6-23 * * *",
+            "time": "1-59/15 6-23 * * *",
             "job": {
                 "type": "runjs",
-                "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/dyjsb.js"
+                "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jrttjsb.js"
             }
         },
         {
