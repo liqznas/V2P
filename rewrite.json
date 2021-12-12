@@ -8,6 +8,7 @@
         "ant.xunsl.com",
         "api-access.pangolin-sdk-toutiao.com",
         "api2.e.kuaishou.com",
+        "api3-normal-lq.toutiaoapi.com",
         "api.e.kuaishou.com",
         "api.smartcinema.com.cn",
         "api.st615.com",
@@ -17,6 +18,7 @@
         "dj.palmestore.com",
         "equities.sunwaystech.com",
         "gaoqingdianshi.com",
+        "i.snssdk.com",
         "jiashijijin.01lb.com.cn",
         "kandian.wkandian.com",
         "mapi.shuijiaobao.cn",
@@ -275,35 +277,11 @@
             "stage": "req"
         },
         {
-            "match": "luckycat/aweme/v1/task/sign_in/detail?",
-            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/dyjsb.js",
+            "match": "luckycat/lite/v1/task/page_data",
+            "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jrttjsb.js",
             "enable": true,
             "stage": "res"
         },
-        {
-            "match": "luckycat/aweme/v1/task/done/read? ",
-            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/dyjsb.js",
-            "enable": true,
-            "stage": "res"
-        },
-        {
-            "match": "luckycat/aweme/v1/task/done/treasure_task? ",
-            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/dyjsb.js",
-            "enable": true,
-            "stage": "res"
-        },
-        {
-            "match": "luckycat/aweme/v1/task/done/excitation_ad_treasure_box? ",
-            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/dyjsb.js",
-            "enable": true,
-            "stage": "res"
-        },
-        {
-            "match": "luckycat/aweme/v1/task/done/excitation_ad? ",
-            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/dyjsb.js",
-            "enable": true,
-            "stage": "res"
-        },        
         {
             "match": "https://nebula.kuaishou.com/rest/n/nebula/activity/earn/overview/basicInfo",
             "target": "https://raw.githubusercontent.com/liuqi6968/-/main/ks_js.js",
