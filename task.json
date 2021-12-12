@@ -51,15 +51,6 @@
             }
         },
        {
-            "name": "今日头条",
-            "type": "cron",
-            "time": "5,35 8-23 * * *",
-            "job": {
-                "type": "runjs",
-                "target": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/jrtt.js"
-            }
-        },
-       {
             "name": "成语大师/成语大学士",
             "type": "cron",
             "time": "14 8-23/2 * * *",
