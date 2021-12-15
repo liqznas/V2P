@@ -42,12 +42,6 @@
         "*.springglasses.com"
     ],
     "rewrite": [
-       {
-            "match": "luckycat/novel/v1/task/sign_in/*",
-            "target": "https://raw.githubusercontent.com/Ariszy/Private-Script/master/Scripts/fqxs.js",
-            "enable": true,
-            "stage": "req"
-        },
         {
             "match": "https://num.springglasses.com/api/app/ios/credit/coin?",
             "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/ttxfk.js",
