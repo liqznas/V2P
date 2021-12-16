@@ -258,7 +258,7 @@
             "stage": "req"
         },
         {
-            "match": "luckycat/lite/v1/task/page_data",
+            "match": "luckycat\/lite\/v1\/task\/page_data",
             "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jrttjsb.js",
             "enable": true,
             "stage": "res"
