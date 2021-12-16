@@ -134,7 +134,7 @@
         {
             "name": "今日头条极速版",
             "type": "cron",
-            "time": "1-59/15 6-23 * * *",
+            "time": "*/32 6-23 * * *",
             "job": {
                 "type": "runjs",
                 "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jrttjsb.js"
@@ -197,19 +197,10 @@
         {
             "name": "番茄畅听",
             "type": "cron",
-            "time": "15 7-23 * * *",
+            "time": "15 7-23/2 * * *",
             "job": {
                 "type": "runjs",
                 "target": "https://cdn.jsdelivr.net/gh/bluesmallpig/scripts/fqct.js"
-            }
-        },
-        {
-            "name": "番茄看看自动阅读",
-            "type": "cron",
-            "time": "15 */3 * * *",
-            "job": {
-                "type": "runjs",
-                "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/fqkk_auto.js"
             }
         },
         {
@@ -224,7 +215,7 @@
         {
             "name": "晶彩文章",
             "type": "cron",
-            "time": "30 7,12,18 * * *",
+            "time": "38 7,18 * * *",
             "running": true,
             "job": {
                 "type": "runjs",
@@ -284,7 +275,7 @@
         {
             "name": "晶彩提现",
             "type": "cron",
-            "time": "34 22 * * *",
+            "time": "34 23 * * *",
             "running": true,
             "job": {
                 "type": "runjs",
@@ -294,7 +285,7 @@
         {
             "name": "晶彩每日收益统计",
             "type": "cron",
-            "time": "15 21 * * *",
+            "time": "15 23 * * *",
             "running": true,
             "job": {
                 "type": "runjs",
@@ -320,7 +311,7 @@
                 "type": "runjs",
                 "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/dsjtx.js"
             }
-        },
+        },        
         {
             "name": "晶彩天气看看赚",
             "type": "cron",
@@ -383,7 +374,7 @@
         {
             "name": "中青文章",
             "type": "cron",
-            "time": "30 7,12,18 * * *",
+            "time": "30 12,18 * * *",
             "running": true,
             "job": {
                 "type": "runjs",
@@ -403,7 +394,7 @@
         {
             "name": "中青火爆转发",
             "type": "cron",
-            "time": "15 6,12,18 * * *",
+            "time": "15 6,18 * * *",
             "running": true,
             "job": {
                 "type": "runjs",
@@ -503,7 +494,7 @@
         {
             "name": "中青自动提现",
             "type": "cron",
-            "time": "25 10 * * *",
+            "time": "25 22 * * *",
             "running": true,
             "job": {
                 "type": "runjs",
