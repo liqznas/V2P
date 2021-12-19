@@ -285,7 +285,7 @@
         {
             "name": "晶彩每日收益统计",
             "type": "cron",
-            "time": "15 23 * * *",
+            "time": "15 7,23 * * *",
             "running": true,
             "job": {
                 "type": "runjs",
@@ -424,7 +424,7 @@
         {
             "name": "中青每日收益统计",
             "type": "cron",
-            "time": "15 23 * * *",
+            "time": "15 7,23 * * *",
             "running": true,
             "job": {
                 "type": "runjs",
