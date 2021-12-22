@@ -22,6 +22,7 @@
         "kandian.wkandian.com",
         "mapi.shuijiaobao.cn",
         "mp.weixin.qq.com",
+        "mp-prod.smartmidea",
         "m.*.shop",
         "nebula.kuaishou.com",
         "ocean.shuqireader.com",
@@ -41,6 +42,12 @@
         "*.springglasses.com"
     ],
     "rewrite": [
+       {
+            "match": "http://mp-prod.smartmidea.+v1/certificate/app/list",
+            "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/mdmj.js",
+            "enable": true,
+            "stage": "req"
+        },
         {
             "match": "https://num.springglasses.com/api/app/ios/credit/coin?",
             "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/ttxfk.js",
