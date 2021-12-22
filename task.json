@@ -6,6 +6,15 @@
     "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/task.json",
     "list": [
         {
+            "name": "美的美居",
+            "type": "cron",
+            "time": "23 11,15 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/mdmj.js"
+              }
+        },
+        {
             "name": "番茄小说",
             "type": "cron",
             "time": "* 8-23/2 * * *",
