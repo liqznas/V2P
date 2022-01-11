@@ -6,12 +6,39 @@
     "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/task.json",
     "list": [
         {
-            "name": "美的美居",
+            "name": "中青极速版文章视频",
+            "type": "cron",
+            "time": "25 8-22 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_read.js"
+              }
+        },
+        {
+            "name": "中青极速版看看赚",
+            "type": "cron",
+            "time": "35 6,21 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_kkz.js"
+              }
+        },
+        {
+            "name": "中青极速版日常任务",
+            "type": "cron",
+            "time": "5,35 8-20 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_daily.js"
+              }
+        },
+        {
+            "name": "中青极速版分享阅读",
             "type": "cron",
             "time": "23 11,15 * * *",
             "job": {
                 "type": "runjs",
-                "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/mdmj.js"
+                "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_shareRead.js"
               }
         },
         {
@@ -22,51 +49,6 @@
                 "type": "runjs",
                 "target": "https://github.com/Ariszy/Private-Script/blob/master/Scripts/fqxs.js"
               }
-        },
-        {
-            "name": "天天消方块",
-            "type": "cron",
-            "time": "*/4 17-19 * * *",
-            "job": {
-                "type": "runjs",
-                "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/ttxfk.js"
-              }
-        },
-        {
-            "name": "天天答题",
-            "type": "cron",
-            "time": "* 8-23/2 * * *",
-            "job": {
-                "type": "runjs",
-                "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/ttdt.js"
-              }
-        },
-        {
-            "name": "天天猜歌",
-            "type": "cron",
-            "time": "*/4 10-12 * * *",
-            "job": {
-                "type": "runjs",
-                "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/ttcg.js"
-            }
-        },
-         {
-            "name": "欢乐消方块",
-            "type": "cron",
-            "time": "*/4 10-12 * * *",
-            "job": {
-                "type": "runjs",
-                "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/hlxfk.js"
-            }
-        },
-       {
-            "name": "成语大师/成语大学士",
-            "type": "cron",
-            "time": "14 8-23/2 * * *",
-            "job": {
-                "type": "runjs",
-                "target": "https://raw.githubusercontent.com/liqznas/V2P/main/JSFile/cyqt.js"
-            }
         },
         {
             "name": "阅多多",
@@ -111,15 +93,6 @@
             "job": {
                 "type": "runjs",
                 "target": "https://raw.githubusercontent.com/YaphetS0903/JStest/main/djxs.js"
-            }
-        },
-        {
-            "name": "趣看行情定时",
-            "type": "cron",
-            "time": "0 6-16/1 * * *",
-            "job": {
-                "type": "runjs",
-                "target": "https://gitee.com/tom210120/tom/raw/master/QKHQ/qkhq.js"
             }
         },
         {
@@ -176,15 +149,7 @@
                 "target": "https://raw.githubusercontent.com/xl2101200/-/main/jztt.js"
             }
         },
-        {
-            "name": "返利好省",
-            "type": "cron",
-            "time": "0 8-23 * * *",
-            "job": {
-                "type": "runjs",
-                "target": "https://raw.githubusercontent.com/YaphetS0903/JStest/main/flhs.js"
-            }
-        },
+
         {
             "name": "自选股",
             "type": "cron",
@@ -560,25 +525,5 @@
                 "target": "https://gitee.com/gossh520/script/raw/master/gdbhapp.js"
             }
         },
-        {
-            "name": "书旗阅读日常任务",
-            "type": "cron",
-            "time": "20 6-22/2 * * *",
-            "running": true,
-            "job": {
-                "type": "runjs",
-                "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/sqxs.js"
-            }
-        },
-        {
-            "name": "书旗阅读每日任务",
-            "type": "cron",
-            "time": "*/6 * * * *",
-            "running": true,
-            "job": {
-                "type": "runjs",
-                "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/everyday.js"
-            }
-        }
     ]
 }
