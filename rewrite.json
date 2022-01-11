@@ -39,10 +39,17 @@
         "*.chuxingyouhui.com",
         "*.snssdk.com",
         "*.toutiaoapi.com",
-        "*.springglasses.com"
+        "*.springglasses.com",
+        "user.youth.cn"
     ],
     "rewrite": [
        {
+            "match": "https://user.youth.cn/FastApi/NewTaskSimple/getTaskList",
+            "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/zqkdFast/zqkdFast_read.js",
+            "enable": true,
+            "stage": "req"
+        },
+        {
             "match": "http://mp-prod.smartmidea.+v1/certificate/app/list",
             "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/mdmj.js",
             "enable": true,
