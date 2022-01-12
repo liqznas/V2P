@@ -143,10 +143,10 @@
         {
             "name": "九章头条",
             "type": "cron",
-            "time": "0 0 */1 * * *",
+            "time": "15 0,6-23 * * *",
             "job": {
                 "type": "runjs",
-                "target": "https://raw.githubusercontent.com/xl2101200/-/main/jztt.js"
+                "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jztt.js"
             }
         },
 
