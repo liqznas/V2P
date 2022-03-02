@@ -5,6 +5,15 @@
     "author": "llll",
     "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/task.json",
     "list": [
+      {
+            "name": "今日头条极速版新版本",
+            "type": "cron",
+            "time": "*/10 5-23 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/jrtt.js"
+              }
+        },
         {
             "name": "中青极速版文章视频",
             "type": "cron",
