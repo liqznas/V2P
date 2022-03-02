@@ -1,0 +1,45 @@
+{
+    "name": "elecV2P 定时任务订阅",
+    "note": "订阅描述，可省略。该订阅仅可用于 elecV2P, 与其他软件并不兼容。",
+    "date": "2021-02-26 23:32:04",
+    "author": "llll",
+    "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/task.json",
+    "list": [
+      {
+            "name": "今日头条极速版",
+            "type": "cron",
+            "time": "*/10 5-23 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://raw.githubusercontent.com/bluesmallpig/scripts/main/jrtt.js"
+              }
+        },
+       {
+            "name": "今日头条极速版",
+            "type": "cron",
+            "time": "23 7-22 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/ksjsb.js"
+              }
+        },
+        {
+            "name": "九章头条",
+            "type": "cron",
+            "time": "15 0,6-23 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/jztt.js"
+            }
+        },
+       {
+            "name": "自选股",
+            "type": "cron",
+            "time": "35 11,16 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/txstock.js"
+            }
+        }
+      ]
+}
