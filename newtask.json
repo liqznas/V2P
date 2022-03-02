@@ -40,6 +40,24 @@
                 "type": "runjs",
                 "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/txstock.js"
             }
-        }
+        },
+        {
+            "name": "康师傅畅饮社",
+            "type": "cron",
+            "time": "42 9,18 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/ksfcys.js"
+            }
+        },        
+        {
+            "name": "#咔咔",
+            "type": "cron",
+            "time": "35 9 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/kaka.js"
+            }
+        },
       ]
 }
