@@ -5,6 +5,15 @@
     "author": "llll",
     "resource": "https://raw.githubusercontent.com/liqznas/V2P/main/task.json",
     "list": [
+        {
+            "name": "快手",
+            "type": "cron",
+            "time": "22 10-20 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/ks.js"
+              }
+        },
       {
             "name": "今日头条极速版",
             "type": "cron",
