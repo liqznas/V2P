@@ -33,6 +33,15 @@
             }
         },
        {
+            "name": "自选股V2",
+            "type": "cron",
+            "time": "35 11,16 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://raw.githubusercontent.com/leafxcy/JavaScript/main/txstockV2.js"
+            }
+        },
+       {
             "name": "自选股",
             "type": "cron",
             "time": "35 11,16 * * *",
